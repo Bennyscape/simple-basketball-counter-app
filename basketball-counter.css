@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "CursedTimerUlil";
+    src: 
+    local('Cursed Timer Ulil'),
+    url(cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf) format("truetype");
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    color: white;
+    background: hsl(198, 93%, 60%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scoreboard{
+    display: grid;
+    grid-gap: 15px;
+    text-align: center;
+    grid-template: repeat(2, 1fr);
+    border: 5px solid #fff;
+    background: hsl(120, 3%, 7%);
+    box-shadow: 1px 6px 15px 6px #0000007d;
+    padding: 30px 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.home-score{
+    grid-column: 1 / 2;
+}
+.guest-score{
+    grid-column: 2 / 3;
+}
+
+span{
+    background: #1e382b34;
+    color: rgb(236, 46, 46);
+    display: block;
+    height: 120px;
+    width: 175px;
+    font-size: 6.5rem;
+    font: "CursedTimerUlil";
+}
+
+.new-game {
+    grid-column: 1 / 4;
+}
+
+
+#reset-btn{
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+button {
+    border: 2px solid #bec2b7;
+    color: #fff;
+    background-color: inherit;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 4px;
+}
+
